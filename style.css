@@ -1,14 +1,10 @@
-
 @charset "UTF-8";
+
 @font-face {
     font-family: 'android';
     src: url(pacote-desafio-android/fontes/idroid.otf) format('opentype');
-    .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
-}
+
 /* Variável para facilitar a configuração  (cores, tipografia e etc */
 :root {
     --cor0: #ebe5c5;
@@ -22,6 +18,7 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
+
 /* Configuração de todos os elementos */
 * {
     margin: 0px;
@@ -31,29 +28,27 @@
 
 body {
     background-color: var(--cor0);
-    font-family: var (--fonte-padrao);
+    font-family: var(--fonte-padrao);
 }
 
 a.externo::after {
     content: '\1F517';
-    
 }
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-
 }
 
 header > h1 {
-   color: white;
-   font-family:  var(--fonte-destaque);
-   font-size: 3em;
-   font-weight: normal;
-   margin-bottom: 20px;
-   display: fle;
-   text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.315);
+    color: white;
+    font-family:  var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 
 header > p {
@@ -67,7 +62,7 @@ header > p {
     padding-left: 10px;
     margin: auto;
     padding-bottom: 10px;
-    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.315);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 
 nav  {
@@ -94,7 +89,6 @@ nav > a:hover {
     color: var(--cor4);
 }
 
-
 main {
     background-color: white;
     padding: 20px;
@@ -104,18 +98,13 @@ main {
     max-width: 1000px;
     margin: auto auto 50px auto;
     box-shadow: 0px 0px 10px black;
- 
 }
+
 article {
     padding: 10px;
     margin: auto;
     display: block;
-    flex-direction: start;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
     border-radius: 0px 0px 20px 20px;
-
 }
 
 img {
@@ -123,14 +112,12 @@ img {
     padding: 0;
     margin: 10px;
     max-width: 100%;
-    
-    
-} 
-    
+    display: block; /* Adicionado para facilitar centralização */
+    margin: auto; /* Adicionado para centralizar as imagens */
+}
+
 #android-human {
     max-width: 350px;
-
-    
 }
 
 div.video {
@@ -149,49 +136,40 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 }
- main h2 {
-    font-family:var(--fonte-android);
-    font-weight: normal;
-    text-align:left ;
-    color:var(--cor4);
-    display: block;
-    background-image: linear-gradient(to right, var(--cor1) ,transparent);
-    text-indent: 8px;
 
+main h2 {
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    text-align: left;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
 article > h1 {
     font-family:'android';
     font-size: 1.8em;
     font-weight: normal;
-    padding: 10px none;
-    margin: none;
+    padding: 10px 0;
+    margin: 0;
     color: var(--cor5);
-    display: flex;
-    text-align: start;
 }
 
 p  {
     font-family: var(--fonte-padrao);
     font-size: 1em;
     text-align: justify;
-    padding: 25px;
+    padding: 25px 0px; /* Ajustado para não ter padding lateral */
     text-indent: 30px;
     line-height: 1.7em;
-
-    
 }
 
-
-main  a {
+main a {
     text-decoration: none;
     color: var(--cor5);
     font-weight: bold;
     background-color: var(--cor1);
     padding: 2px 6px;
-
-
-
 }
 
 main a:hover {
@@ -209,10 +187,7 @@ aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
-
 }
 
 aside > ul {
@@ -222,10 +197,7 @@ aside > ul {
     column-gap: 80px;
     text-align: left;
     margin: auto;
-
-
 }
-
 
 aside > h3 {
     background-color: var(--cor4);
@@ -236,17 +208,15 @@ aside > h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
-
 footer {
     background-color: var(--cor5);
     display: flex;
     justify-content: center;
     align-content: center;
-    padding:0px;
-
+    padding: 5px;
 }
 
-footer  a {
+footer a {
     text-decoration: none;
     color: white;
 }
@@ -254,15 +224,12 @@ footer  a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor4);
-
 }
 
 footer p {
-    padding: auto;
     font-size: 0.8em;
     color: white;
-    line-height: 1.5em;
+    text-align: center;
     margin: 0;
-    padding: 10px 0;
-
+    padding: 5px;
 }
