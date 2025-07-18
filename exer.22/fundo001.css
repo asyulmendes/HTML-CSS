@@ -1,0 +1,36 @@
+:root {
+    /* Paleta de cores do projeto */
+    --cor01: skyblue;
+    --cor02: yellow;
+    --cor03: red;
+    
+    /* Variáveis de imagem */
+    --imagem-div: url("Imagens/pattern003.png"); /* Verifique este caminho! */
+    --imagem-fundo: url("Imagens/wallpaper001.jpg"); /* Verifique este caminho! */
+}
+
+body {
+    /* Exemplo de uso da imagem de fundo geral */
+    background-image: var(--imagem-fundo);
+}
+ 
+div.quadrado {
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px  solid black;
+    background-color: lightgrey;
+    height: 300px;
+    width: 300px;
+}
+
+div#q1 {
+    background-color: var(--cor01);
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor03));
+}
+
+div#q3 {
+    background-image: var(--imagem-div);
+}
